@@ -5,8 +5,8 @@
       <p class="subtitle">
         I am a {{ age }}-year old Electronics Engineering graduate and a Vue.js
         developer based in the Philippines 🇵🇭. I like to code 👨🏻‍💻 and play video
-        games 🎮. Pleased to meet you! While you're here, check out some of the
-        things I've previously worked in.
+        games 🎮. Pleased to meet you! While you're here, check out some of my
+        previous works.
       </p>
     </div>
     <div class="img-container">
@@ -86,6 +86,9 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  #header {
+    padding-top: 13vw;
+  }
   .img-container {
     width: 50vw;
     height: 50vw;
