@@ -1,12 +1,11 @@
 <template>
   <div id="header">
     <div>
-      <h1>Hello.<br />I'm <span class="highlight">Von Denorte.</span></h1>
+      <h1>Hi!<br />I'm <span class="highlight">Von Denorte.</span></h1>
       <p class="subtitle">
-        I am a {{ age }}-year old Electronics Engineering graduate and a Vue.js
-        developer based in the Philippines 🇵🇭. I like to code 👨🏻‍💻 and play video
-        games 🎮. Pleased to meet you! While you're here, check out some of my
-        previous works.
+        I am a {{ age }}-year old engineer in electronics and a web developer
+        based in the Philippines 🇵🇭. I like to code 👨🏻‍💻 and play video games 🎮.
+        While you're here, check out some of my works.
       </p>
     </div>
     <div class="img-container">

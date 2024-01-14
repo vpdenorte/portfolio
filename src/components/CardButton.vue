@@ -1,12 +1,30 @@
 <template>
   <div>
-    <a :href="action.link" target="_blank" v-if="action.type == 'gallery'">
-      <font-awesome-icon class="icon" :icon="['fas', 'images']" />
-      View gallery
+    <a :href="action.link" target="_blank" v-if="!action.disabled">
+      <font-awesome-icon
+        v-if="action.type == 'gallery'"
+        class="icon"
+        :icon="['fas', 'images']"
+      />
+      <font-awesome-icon
+        v-if="action.type == 'paper'"
+        class="icon"
+        :icon="['fas', 'file-alt']"
+      />
+      View {{ action.type }}
     </a>
-    <a :href="action.link" target="_blank" v-if="action.type == 'paper'">
-      <font-awesome-icon class="icon" :icon="['fas', 'file-alt']" />
-      View paper
+    <a v-else class="disabled">
+      <font-awesome-icon
+        v-if="action.type == 'gallery'"
+        class="icon"
+        :icon="['fas', 'images']"
+      />
+      <font-awesome-icon
+        v-if="action.type == 'paper'"
+        class="icon"
+        :icon="['fas', 'file-alt']"
+      />
+      View {{ action.type }}
     </a>
   </div>
 </template>
@@ -16,6 +34,7 @@ export default {
   name: 'CardButton',
   props: {
     action: Object,
+    disabled: Boolean,
   },
 }
 </script>
@@ -37,5 +56,14 @@ a:hover {
 
 .icon {
   padding-right: 2px;
+}
+
+.disabled {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: default;
+}
+
+a:hover.disabled {
+  border-color: inherit;
 }
 </style>

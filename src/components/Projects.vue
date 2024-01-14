@@ -19,6 +19,16 @@ export default {
     return {
       items: [
         {
+          title: 'Product Logger Web App',
+          text: 'Blockchain-based supply chain management system for manufacturers with CRUD functionality, transaction writing, filtering, and report generation',
+          tags: ['Next.js', 'React', 'Hyperledger Fabric'],
+          image: 'ledger.png',
+          action: {
+            type: 'gallery',
+            link: 'https://imgur.com/a/DjwwnNk',
+          },
+        },
+        {
           title: 'E-Commerce Website',
           text: 'Subscription-based shopping hub for contractors and suppliers \
                 with search and filter, product management, and supplier profile page features',
@@ -26,7 +36,7 @@ export default {
           image: 'ecommerce.png',
           action: {
             type: 'gallery',
-            link: 'https://imgur.com/a/PbbcH4t',
+            link: 'https://imgur.com/a/ZkXO9BG',
           },
         },
         {
@@ -37,7 +47,8 @@ export default {
           image: 'smartclassroom.png',
           action: {
             type: 'paper',
-            link: './file/Development_of_RFID_System_for_Smart_Classroom.pdf',
+            link: '',
+            disabled: true,
           },
         },
         {
@@ -65,7 +76,8 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 2fr);
+  grid-auto-flow: row;
   gap: 28px;
   padding-top: 20px;
 }

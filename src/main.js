@@ -6,9 +6,10 @@ import {
   faImages,
   faEnvelope,
   faFileAlt,
+  faTimes,
 } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faImages, faEnvelope, faFileAlt, faLinkedin, faGithub)
+library.add(faImages, faEnvelope, faFileAlt, faTimes, faLinkedin, faGithub)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

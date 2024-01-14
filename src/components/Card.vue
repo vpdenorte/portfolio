@@ -39,6 +39,7 @@ export default {
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.2s, transform 0.2s;
+  background-color: white;
 }
 
 .card:hover {
@@ -65,7 +66,8 @@ export default {
   display: inline-block;
   padding: 6px 8px;
   margin-right: 8px;
-  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   font-size: 0.8rem;
 }
